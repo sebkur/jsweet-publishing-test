@@ -12,3 +12,9 @@ Use this to upload the artifact to a local Maven repository located at `/tmp/mav
 Use this to build the JSweet output in `build/target/javascript`:
 
     ./gradlew jsweet
+
+## Automatically use source dependencies
+
+See the
+[with-deps branch](https://github.com/sebkur/jsweet-publishing-test/tree/with-deps)
+on this topic.
