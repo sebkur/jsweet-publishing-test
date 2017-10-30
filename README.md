@@ -12,3 +12,10 @@ Use this to upload the artifact to a local Maven repository located at `/tmp/mav
 Use this to build the JSweet output in `build/target/javascript`:
 
     ./gradlew jsweet
+
+## Automatically use source dependencies
+
+In contrast to the master branch, this branch includes a dependency on
+`de.topobyte:viewports-core:0.0.2`. It would be very useful if the plugin would
+download the respective source jar, extract it to a temporary directory in the
+build directory and add it as a source set so that the build succeeds.
