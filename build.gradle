@@ -27,11 +27,13 @@ version = pVersion
 
 repositories {
     mavenCentral()
+    maven { url "http://mvn.topobyte.de" }
     maven { url "http://repository.jsweet.org/artifactory/libs-release-local" }
     maven { url "http://repository.jsweet.org/artifactory/libs-snapshot-local" }
 }
 
 dependencies {
+    compile 'de.topobyte:viewports-core:0.0.2'
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
